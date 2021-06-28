@@ -90,5 +90,6 @@
 
 	<modules>
 		<module>StudentInputs</module>
+		<module>StudentSearch</module>
 	</modules>
 </project>

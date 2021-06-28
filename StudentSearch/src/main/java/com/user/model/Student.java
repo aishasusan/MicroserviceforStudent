@@ -1,33 +1,17 @@
 package com.user.model;
 
-import java.sql.Date;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-import com.sun.istack.NotNull;
-
-@Entity
 public class Student {
 
-	@Id
-	@NotNull
-	// @GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
-	@NotNull
 	private String name;
-	@Column(length = 15)
 	private String department;
 
 	public Student() {
 		super();
 	}
 
-	public Student(Integer id, String name, String department, Date passExpiryDate) {
+	public Student(Integer id, String name, String department) {
 		super();
 		this.id = id;
 		this.name = name;
